@@ -5,7 +5,7 @@ def key_for_min_value(hash)
   key = nil
   lowest_value = nil
   hash.each do |name, value|
-    if lowest value == nil || value < lowest_value  ## how can an integer be less than nil?
+    if lowest value == nil or value < lowest_value  ## how can an integer be less than nil?
     lowest_value = value
     key = name
   end
