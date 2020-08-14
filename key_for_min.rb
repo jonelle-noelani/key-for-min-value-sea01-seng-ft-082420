@@ -5,7 +5,7 @@ def key_for_min_value(hash)
   key = nil
   lowest_value = nil
   hash.each do |name, value|
-    if lowest value == nil or value < lowest_value  ## how can an integer be less than nil?
+    if lowest_value == nil || value < lowest_value  ## how can an integer be less than nil?
     lowest_value = value
     key = name
   end
@@ -18,7 +18,7 @@ end
 #   key = nil
 #   lowest_value = Float::INFINITY
 #   hash.each do |name, value|
-#     if value <=lowest_value
+#     if value <= lowest_value
 #       lowest_value = value
 #       key = name
 #   end
